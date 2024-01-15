@@ -1,2 +1,2 @@
-# Git-and-GitHub-tutorial
-A repository to practice setting up and using GitHub
+# General intro to Github
+# How to use this repo
