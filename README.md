@@ -6,13 +6,16 @@ Welcome to this repository dedicated to practicing and understanding Git and Git
 
 This repository is designed as a tool to help enhance your understanding of Git and GitHub through practical application. To make the most out of this repository, follow these steps:
 
-1. **Navigate the Tutorials**: Inside, you will find structured directories for Python and R tutorials. Each tutorial is self-contained with its own set of instructions and exercises.
+1. **Read the introduction** to Git and Github below. This is intended as a brief overview before getting some hands on practice in the tutorials. For deeper learning please see the `Duck book`:
+ https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html
 
-2. **Follow Along** with the step-by-step guides. Practice by making changes to the provided scripts or adding new ones as instructed.
+2. **Navigate the Tutorials**: Inside, you will find structured directories for Python and R tutorials. Each tutorial is self-contained with its own set of instructions and exercises.
 
-3. **Commit Your Changes**: As you work through the tutorials, practice your Git skills by staging, committing, and pushing your changes.
+3. **Follow Along** with the step-by-step guides. Practice by making changes to the provided scripts or adding new ones as instructed.
 
-4. **Branch Out**: Experiment with branching by creating new branches for different features or exercises. This will help you understand the workflow and the concept of branch management.
+4. **Commit Your Changes**: As you work through the tutorials, practice your Git skills by staging, committing, and pushing your changes.
+
+5. **Branch Out**: Experiment with branching by creating new branches for different features or exercises. This will help you understand the workflow and the concept of branch management.
 
 
 # Introduction to Git and GitHub
