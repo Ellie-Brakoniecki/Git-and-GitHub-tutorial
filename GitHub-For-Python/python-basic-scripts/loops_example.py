@@ -4,5 +4,6 @@
 print("For loop output:")
 for i in range(1, 6):
     print(i)
+    print(i+1)
 
 # While loop to print numbers

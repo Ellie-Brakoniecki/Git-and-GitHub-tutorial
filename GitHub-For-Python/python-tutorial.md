@@ -1,175 +1,180 @@
-# Git-and-GitHub-tutorial
-A repository to practice setting up and using GitHub
+# Using Git with Python in Visual Studio Code: A Step-by-Step Guide
+
+This guide will help you integrate Git with your Python projects in VS Code, including creating a new project and connecting an existing project to GitHub.This guide will take you through using Git with Python projects in Visual Studio Code, from cloning a repository to pushing changes back to GitHub. We'll work through practical examples, including script creation and modification, to help you understand the Git workflow within the context of Python development.
+
+# Creating a New Python Project and Connecting to GitHub
+
+## Step 1: Create a New Repository on GitHub
+
+1. Go to GitHub.com and log in to your account.
+2. Navigate to your home page and click on the "Repositories" tab.
+3. Click on the "New" repository button:
 
 
-# Introduction
-
-## Why Use Git and GitHub?
-
-Git is a version control system that enables teams to collaboratively work on a shared codebase. GitHub is a platform that hosts Git repositories and provides a user-friendly interface to manage and track work on your repositories.
-
-**Version Control:** 
-At its core, Git is a version control system. This means that it helps you keep track of different versions of your projects. Every time you make a change, you can save that version and come back to it any time in the future.
-
-**Collaboration:** 
-Git allows multiple people to work on the same project without stepping on each other's toes. Everyone can work on their own version, and then merge their changes back into the main project when they're ready.
-
-**Backup and Restore:** 
-With Git, every time you commit (or save) a version of your project, that version is securely stored. This means in the event of data loss or errors, you can restore your project to a previous state.
-
-**Open Source:**
-GitHub, a platform built upon the foundation of Git, extends the benefits of version control into a collaborative social platform. It promotes the ethos of open-source by enabling you to share your projects and collaborate with others on projects.
-
----
-
-## Understanding Repositories
-
-In the world of Git and GitHub, a "repository" or "repo" is essentially a digital directory or storage space where you can save your project files. Think of it like a folder on your computer, but with a few additional features.
-
-Here's what makes repositories special:
-
-- **History:** Every change or "commit" to the repository has a record. You can always look back and see who made what changes and when.
-  
-- **Branching:** You can create branches in a repository, which is like having parallel versions of your files. This is particularly useful when you want to develop a new feature without affecting the main project.
-  
-- **Collaboration:** Multiple people can collaborate on the same repository. They can propose changes, which can be reviewed and then merged into the main project.
-  
-- **Remote and Local:** With Git and GitHub, repositories can exist in two places – remotely (on GitHub's servers) and locally (on your computer). You can work on the local version of your project and then sync your changes with the remote version on GitHub.
-
-When setting up a new project or joining an existing project, you'll often start by either creating a new repository or cloning an existing one to your local machine. As you develop your project, remember that the repository is more than just a storage space – it's a powerful tool for versioning, collaboration, and code management.
-
----
-
-# Getting Started
-
-## Checking if Git is Installed
-
-If you're using the DAP, first open a Command Prompt window. Alternatively, if you're working in RStudio or VS Code, you can access their built-in terminals.
-
-To verify if Git is installed, run the following command:
-
-```bash
-git --version
-```
-![git version image](images\image_1.PNG)
+![Create repository image 1](/GitHub-For-Python/images/create-repo-1.png)
 
 
-If Git is installed, this command will return the installed version number.
+4. Fill in the details and click "Create Repository button at the bottom:
 
-If it is not installed contact DAP support. 
 
----
+![Create repository image 2](/GitHub-For-Python/images/create-repo-2.png)
 
-## Setting Up Git
 
-1. **Configure your identity**: Before you can start using Git, it's essential to identify yourself. This ensures that your commits (code changes) have your name and email associated with them.
+## Step 2: Clone the Repository
 
-    ```bash
-    git config --global user.name "Your Name"
-    git config --global user.email "your.email@example.com"
-    ```
+1. Once your repository has been created, navigate to your newly created repository on GitHub.
+1. Click on the "Code" button and copy the repository URL to your clipboard.
 
-   *Note*: It's good practice to use a consistent email address for both Git and GitHub. This helps in linking your commits to your GitHub profile.
 
-2. **Verify your settings**: Once you've entered your details, you can check to make sure they've been saved correctly.
+![Copy repo url](/GitHub-For-Python/images/repo-url.png)
 
-    ```bash
-    git config --list
-    ```
-    
----    
-    
-## Setting Up GitHub
 
-1. **Create an Account**: 
-    - Navigate to [GitHub](https://github.com/).
-    - Click on the "Sign Up" button, usually located at the top right corner of the page.
-    - Follow the on-screen instructions to create your account. Remember to verify your email address to activate your account.
+1. Open Visual Studio Code.
+2. Open the integrated terminal in Visual Studio Code by selecting View > Terminal.
+3. Clone the Git repository by running the command `git clone [Repository URL]` in the terminal you just opened. 
+   Replace `[Repository URL]` with the URL you copied earlier.
 
-2. **Setup Your Profile**:
-    - Once your account is created, navigate to your profile settings.
-    - Here, you can add a profile picture, set a bio, and more. Filling out these details can help colleagues or collaborators recognize and connect with you on the platform.
+    ![cloning repo](/GitHub-For-Python/images/cloning-repo.png)
 
-3. **Create a New Repository**: 
-    - After logging in, you'll find a '+' icon at the top right corner of your screen. Click on it and select 'New repository'.
-    - Choose a name for your repository and provide a brief description.
-    - Decide if you want this repository to be public (visible to everyone) or private (visible only to you and those you grant access to).
-    - It's a good practice to initialize the repository with a README. This file serves as an introduction to what your project is about.
-    - Click "Create repository".
-    
+4. Open the cloned repository folder in Visual Studio Code by selecting File > Open Folder.
 
-4. **Clone the Repository**: 
-    - To work on your project locally on your computer, you'll need to clone the repository.
-    - Navigate to your new repository's main page.
-    - Click on the 'Code' button. This should reveal a dropdown.
-    - Ensure 'HTTPS' is selected and click on the clipboard icon to copy the repository URL.
-    - Open your terminal or command prompt and navigate to where you want to download (or clone) the repository.
-    - Type the following command:
 
-    ```bash
-    git clone [paste-the-copied-repository-url-here]
-    ```
+## Step 3: Create and Add a New Python Script (Hello, World!)
 
-    - After pasting the URL, press 'Enter'. Your repository will be downloaded to your local machine and you can begin working on it.
-    
----
-    
-## Git Basics: Staging, Committing, and Pushing Changes
+1. In VS Code, create a new file named hello_world.py. 
 
-Before diving into your first commit, it's essential to understand the three primary steps of Git's workflow: staging, committing, and pushing changes. This workflow ensures you have control over which changes are saved and allows for effective collaboration with others.
+2. Write the following Python script in the file:
 
-### Staging Changes
-
-Staging is the first step in the Git workflow. When you make changes to your files, Git recognizes those modifications. Before you can save your changes, you need to "stage" them. Staging is like preparing a list of changes you want to save.
-Use the git add command followed by the filenames you want to stage. For staging all the changes in your directory, you can use:
-
-```bash
-git add .
+```python
+# This is a simple Python script that prints "Hello, World!" to the console.
+print("Hello, World!")
 ```
 
-### Committing Changes
+3. Save the file in your project directory.
 
-Once you've staged your changes, you can "commit" them. Committing is the act of saving your staged changes along with a descriptive message.
-The message should briefly describe what you've done. 
-To commit your staged changes use the command: 
 
-```bash
-git commit -m "Your descriptive commit message here"
+## Step 4: Add the New Script to the Git Repository
+
+1. In the terminal, run the command `git status` in the terminal to see the untracked files.
+
+2. Add your Python script to the Git staging area by running the following command in the terminal:
+`git add hello_world.py.` This command moves the file from your working directory into the staging area, preparing it for the next commit.
+
+3. Confirm that it has been staged for commit by running `git status` again.
+
+
+## Step 5: Commit Your Changes
+
+1. Commit your changes to the local repository by running the following command in the terminal:
+ `git commit -m "Add Hello World script"`
+2. Verify that there are no outstanding changes by running  `git status` again.
+
+
+## Step 6: Push Your Changes to GitHub
+Push your changes to the remote repository by running the following command in the terminal:
+    `git push origin main`
+
+
+# Adding More Scripts and Exploring More Git Features
+
+Now that you've added a simple script to your repository, let's expand your project with a more complex script and learn more Git features along the way.
+
+## Step 7: Create a Basic Calculator Script
+
+1. In Visual Studio Code, create a new file named calculator.py.
+
+Write the following Python script in the file:
+```python
+# This script acts as a basic calculator that can add, subtract, multiply, and divide two numbers.
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y == 0:
+        return "Undefined"
+    return x / y
+
+# Example usage
+num1 = 5
+num2 = 3
+
+print(f"{num1} + {num2} = {add(num1, num2)}")
+print(f"{num1} - {num2} = {subtract(num1, num2)}")
+print(f"{num1} * {num2} = {multiply(num1, num2)}")
+print(f"{num1} / {num2} = {divide(num1, num2)}")
 ```
-It's good practice to write clear and meaningful commit messages. This ensures that others (and your future self) can understand the history of the project.
 
-### Pushing Changes
+2. Save the file in your project directory.
 
-After committing your changes, they exist only on your local machine. To share these changes with others or to back them up on GitHub, you "push" them to a remote repository.
 
-```bash
-git push origin main
+## Step 8: Add and Commit the Calculator Script
+
+After creating your calculator.py script with the basic calculator functions, you'll want to track these changes using Git:
+
+1. In the terminal, type `git status` to see the new untracked file (calculator.py).
+2. To stage this new file, type `git add calculator.py`. This command moves the file from your working directory into the staging area, preparing it for the next commit.
+3. Confirm that the file is staged for the commit by typing `git status` again. The file should appear under "Changes to be committed".
+4. Commit the staged file to your local repository by typing `git commit -m "Add basic calculator script"`. The message inside the quotes should be concise yet descriptive of the changes made.
+5. Finally, push your committed changes to the remote GitHub repository with`git push origin main`. This updates the remote repository with your local changes.
+
+## Step 9: Branching, Editing, and Merging
+Branching in Git allows you to diverge from the main line of development and work on new features or bug fixes without affecting the main project. 
+Here's how to use branches:
+
+### Creating a New Branch:
+
+1. Create a new branch by typing `git branch new-feature` in the terminal, replacing new-feature with the name of your branch, such as `calculator-enhancements`.
+2. Switch to your new branch with `git checkout new-feature`. You are now in a new working environment separate from the main branch (usually called main or main).
+
+### Editing Files in the New Branch:
+With your new branch checked out, open the calculator.py file in VS Code.
+
+1. Make some changes to the file. For example, add a new function that calculates the remainder (modulo) of two numbers:
+
+```python
+Copy code
+def modulo(x, y):
+    return x % y
 ```
 
-Note: origin refers to the remote repository you cloned from, and main is the branch you're pushing to. If your default branch is named differently (like master), replace main with your branch name.
+2. Save your changes to the file in VS Code.
 
-By understanding these core commands and their roles in the Git workflow, you're on your way to managing your projects effectively and collaborating with others seamlessly.
+### Adding and Committing Changes in the New Branch:
 
----
+1. After editing, go back to the terminal and type `git status` to see your changes.
+2. Stage your changes with `git add calculator.py`.
+3. Commit the changes with `git commit -m "Add modulo function to calculator"`.
+4. Push your branch to GitHub with git push -u origin new-feature.
 
-## Making Your First Commit
-After making some changes to the files in the repository, you'll want to save these changes using Git. Now that you understand the underlying concepts of staging, committing, and pushing, you can perform these actions:
 
-Navigate to the repository's directory on your terminal or command prompt.
+### Merging Your Changes Back to the Main Branch:
 
-Type the following commands in sequence:
-```bash
-git add .
-git commit -m "Description of your changes"
-git push origin main
-```
+1. Before merging, switch back to your main branch with `git checkout main`.
+2. Make sure your main branch is up to date by pulling the latest changes with `git pull origin main`.
+3. Now, merge your feature branch into the main branch with `git merge new-feature`.
+4. If there are no conflicts, your changes will be merged successfully. If there are conflicts, you'll need to resolve them manually in Visual Studio Code. 
+5. After the merge, push the updated main branch to GitHub with `git push origin main`.
 
-These commands stage your changes, save them with a message, and then upload (push) them to GitHub, so they reflect on your online repository.
 
----
+### Deleting the Feature Branch (Optional):
+Once your feature has been successfully merged and you no longer need the branch, you can delete it:
 
-# Conclusion
+1. To delete the branch locally, type `git branch -d new-feature`.
+2. To delete the branch from GitHub, type `git push origin --delete new-feature`.
 
-This is just the tip of the iceberg when it comes to using Git and GitHub. As you delve deeper, you'll discover many powerful features that can streamline your workflow and enhance collaboration. GitHub has a plethora of documentation and tutorials available, so as you grow more comfortable, you can explore more advanced features and best practices.
 
----
+# Note on using VS Code's Git Integration:
+
+While this guide emphasizes command-line Git operations, Visual Studio Code provides a user-friendly Git interface. 
+Once you're familiar with basic Git commands, using VS Code's integrated Git features can streamline your workflow. 
+These features allow easy staging, committing, branch switching, and more, enhancing productivity.
+
+However, understanding the command-line basics remains essential for troubleshooting and complex situations. 
+We recommend a combined approach: use VS Code's GUI for routine tasks and the command line when necessary. 
