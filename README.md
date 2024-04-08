@@ -20,7 +20,6 @@ This repository is designed as a tool to help enhance your understanding of Git 
 
 # Introduction to Git and GitHub
 
-# Introduction
 
 ## Why Use Git and GitHub?
 
@@ -38,6 +37,22 @@ With Git, every time you commit (or save) a version of your project, that versio
 **Open Source:**
 GitHub, a platform built upon the foundation of Git, extends the benefits of version control into a collaborative social platform. It promotes the ethos of open-source by enabling you to share your projects and collaborate with others on projects.
 
+
+## What is the difference between Git and GitHub?
+# Git: The Local Version Control System
+
+Git is a version control system that lets you track changes and manage the history of your code projects on your local computer. Here’s why it’s important:
+
+**Track Changes Locally**: Allows you to see every change to your code, helping you manage how your project evolves.
+**Work Offline**: Operates on your local machine, enabling you to work without an internet connection.
+**Branching**: Supports creating branches, so you can experiment without affecting the main project.
+
+# GitHub: The Cloud Platform for Code Collaboration
+GitHub is a cloud-based service hosting Git repositories. It brings your projects to the internet, making collaboration easy. Its key features include:
+
+**Collaborate Anywhere**: Makes your projects accessible online for collaboration.
+**Pull Requests & Code Review**: Facilitates suggesting, reviewing, and approving changes in a structured manner.
+**Issue Tracking**: Provides tools for managing tasks, bugs, and feature requests.
 ---
 
 ## Understanding Repositories
