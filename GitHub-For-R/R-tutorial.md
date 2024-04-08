@@ -226,7 +226,7 @@ Branching in Git allows you to diverge from the main line of development and wor
 Here's how to use branches:
 
 ### Creating a New Branch:
-Create a new branch by typing git branch new-feature in the terminal, replacing new-feature with the name of your branch, such as calculator-enhancements 1git branch add-modulo-to-calculator`.
+Create a new branch by typing git branch new-feature in the terminal, replacing new-feature with the name of your branch, such as calculator-enhancements `git branch add-modulo-to-calculator`.
 Switch to your new branch with git checkout new-feature `git checkout add-modulo-to-calculator`. You are now in a new working environment separate from the main branch (usually called main).
 
 ### Editing Files in the New Branch:
