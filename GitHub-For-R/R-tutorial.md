@@ -2,9 +2,9 @@
 # R Tutorial
 
 ## Table of contents
-1. [Creating a new R project] (#Creating a new R project)
+1. [Creating a new R project] (#creatinganewrproject)
 
-# Connecting R with Git <a name="Creating a new R project"></a>
+# Connecting R with Git <a name="creatinganewrproject"></a>
 
 This guide will show you step by step how to create a new R project using Git and how to connect existing R projects to Git, all within R. We'll work through practical examples, including script creation and modification, to help you understand the Git workflow within the context of R development (For instructions on how to achieve this using VS code, please see the Python Guide).
 
