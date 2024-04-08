@@ -1,11 +1,5 @@
 ---
-title: "Connecting R with Git"
-
-output: 
-  html_document:
-      toc: true
-      toc_depth: 3 
----
+# R Tutorial
 
 # Connecting R with Git
 
