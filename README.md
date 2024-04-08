@@ -47,7 +47,7 @@ GitHub builds upon Git's capabilities, providing a platform for collaborative pr
 - **Accessible Collaboration**: Hosts projects online, simplifying teamwork across locations.
 - **Code Review**: Uses pull requests for proposing, reviewing, and merging changes, improving code quality.
 - **Issue Tracking**: Offers tools for organizing tasks, bugs, and feature requests, keeping projects well-managed.
-- **Open Source Community**:** Encourages sharing and contributing to public projects, promoting collaboration in the open-source community.
+- **Open Source Community**: Encourages sharing and contributing to public projects, promoting collaboration in the open-source community.
 
 ## The Difference Between Git and GitHub
 
