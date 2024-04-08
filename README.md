@@ -51,9 +51,17 @@ GitHub builds upon Git's capabilities, providing a platform for collaborative pr
 
 ## The Difference Between Git and GitHub
 
-Git focuses on version control, allowing you to track changes and manage your project's evolution locally on your computer. Its main features include local change tracking, offline operation, and branching for experimentation.
+**Git** focuses on version control, allowing you to track changes and manage your project's evolution locally on your computer. 
+Its main features include:
+- Local change tracking
+- Offline operation
+- Branching for developing new features or fixing issues, which ensures the main project's integrity.
 
-GitHub is a cloud-based service that enhances Git repositories with additional features for collaboration. Its main offerings include online hosting for global access, pull requests and code reviews for teamwork, and issue tracking for project management.
+**GitHub** is a cloud-based service that enhances Git repositories with additional features for collaboration. 
+Its main features include:
+- Online hosting makes Git projects accessible from anywhere, enabling collaboration across diverse geographical locations.  
+- Pull requests and code reviews for teamwork
+- Issue tracking for project management.
 
 In summary, **Git** provides the foundational infrastructure for version control, enabling developers to manage and track changes locally. **GitHub** expands on this by offering a platform for collaborative project management, making it easier to share and contribute to code across teams and the open-source world.
 
