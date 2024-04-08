@@ -221,7 +221,7 @@ After creating your calculator.R script with the basic calculator functions, you
 4. Commit the staged file to your local repository by typing `git commit -m "Add calculator.R"`. The message inside the quotes should be concise yet descriptive of the changes made.
 5. Finally, push your committed changes to the remote GitHub repository with `git push origin main`. This updates the remote repository with your local changes.
 
-### Branching, Editing, and Merging
+## Branching, Editing, and Merging
 Branching in Git allows you to diverge from the main line of development and work on new features or bug fixes without affecting the main project. 
 Here's how to use branches:
 
