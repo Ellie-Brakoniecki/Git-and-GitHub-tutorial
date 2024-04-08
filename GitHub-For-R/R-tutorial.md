@@ -1,10 +1,7 @@
 ---
 # R Tutorial
 
-## Table of contents
-1. [Creating a new R project] (#creatinganewrproject)
-
-# Connecting R with Git <a name="creatinganewrproject"></a>
+# Connecting R with Git
 
 This guide will show you step by step how to create a new R project using Git and how to connect existing R projects to Git, all within R. We'll work through practical examples, including script creation and modification, to help you understand the Git workflow within the context of R development (For instructions on how to achieve this using VS code, please see the Python Guide).
 
@@ -167,7 +164,7 @@ Step 2:
   - Go to the terminal window in R (botttom of the screen, next to console):
 
     <br> <!-- HTML line break -->
-    <img src="images/Terminal R.png" alt="Alt text" width="700">
+    <img src="images/Terminal R.PNG" alt="Alt text" width="700">
     <br> <!-- HTML line break -->
     <br> <!-- HTML line break --> 
 
