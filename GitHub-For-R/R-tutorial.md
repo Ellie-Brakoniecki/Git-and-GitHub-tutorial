@@ -2,7 +2,7 @@
 # R Tutorial
 
 ## Table of contents
-1. [Creating a new R project](#Creating a new R project)
+1. [Creating a new R project] (#Creating a new R project)
 
 # Connecting R with Git <a name="Creating a new R project"></a>
 
