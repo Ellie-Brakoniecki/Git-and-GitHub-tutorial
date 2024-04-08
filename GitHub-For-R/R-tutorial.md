@@ -63,6 +63,85 @@ Once set up, your R projet should look something similar to this. The main featu
 <br> <!-- HTML line break -->
 <br> <!-- HTML line break -->
 
+# Connecting an existing R project to GitHub
+
+Step 1: 
+
+  - Open your R project.
+  - Go to Tools > Version Control > Project Setup…
+
+<br> <!-- HTML line break -->
+  <img src="images/Step1 Project Steup.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Step 2: 
+
+  - Set Version control system to ‘Git’.
+  - A dialog box will open to confirm New Git Repository. Select Yes.
+  - A dialog box will follow asking to Confirm Restart RStudio. Select Yes.
+
+<br> <!-- HTML line break -->
+  <img src="images/Step2 Set to Git.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Step 3: 
+
+  - R would have restarted, and you will be able to see a tab named Git in the same on the top right corner of your Rstudio console. 
+  
+<br> <!-- HTML line break -->
+  <img src="images/Step3 Git.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+  - The contents of your R project will appear on that window, with a question mark next to it. Click on the box and the question mark will change to a green A. This will ‘stage’ that ‘change’ in your Git repository.
+
+- Select all of the items from that list and click on Commit. 
+
+<br> <!-- HTML line break -->
+  <img src="images/Step3 Stage.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Step 4: 
+
+-	You will now see a new dialogue box that allows you to review the changes.  
+-	Enter a short but descriptive comment summarising the action you are performing and select commit.
+-	The Git Commit dialogue box will open indicating which items have been committed. Press close and your Git tab in R studio should now be clear, as all changes are now committed.
+
+<br> <!-- HTML line break -->
+  <img src="images/Step4 comment and commit.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Step 5: 
+
+  - Go to GitHub and create a new repository. Recommend using the same name as the R project you are planning to connect to GitHub. 
+- Once your repository is created, copy the code under the header ‘…or push an existing repository from the command line’
+
+<br> <!-- HTML line break -->
+  <img src="images/Step5 copy.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Step 6: 
+
+-	Go back to R and click on Terminal, paste the lines of code copied from GitHub and press Enter.
+<br> <!-- HTML line break -->
+  <img src="images/Step6 terminal.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+Now go back to GitHub and you should be able to see all of the contents of your R project on GitHub :)
+
+<br> <!-- HTML line break -->
+  <img src="images/Completed repo.png" alt="Alt text" width="500">
+<br> <!-- HTML line break -->
+<br> <!-- HTML line break -->
+
+
+
 # Practice Section
 
 ## Creating a simple file 
@@ -186,81 +265,3 @@ To delete the branch from GitHub, type git push origin --delete new-feature `git
 
 
 
-# Connecting an existing R project to GitHub
-
-Step 1: 
-
-  - Open your R project.
-  - Go to Tools > Version Control > Project Setup…
-
-<br> <!-- HTML line break -->
-  <img src="images/Step1 Project Steup.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Step 2: 
-
-  - Set Version control system to ‘Git’.
-  - A dialog box will open to confirm New Git Repository. Select Yes.
-  - A dialog box will follow asking to Confirm Restart RStudio. Select Yes.
-
-<br> <!-- HTML line break -->
-  <img src="images/Step2 Set to Git.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Step 3: 
-
-  - R would have restarted, and you will be able to see a tab named Git in the same on the top right corner of your Rstudio console. 
-  
-<br> <!-- HTML line break -->
-  <img src="images/Step3 Git.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-  - The contents of your R project will appear on that window, with a question mark next to it. Click on the box and the question mark will change to a green A. This will ‘stage’ that ‘change’ in your Git repository.
-
-- Select all of the items from that list and click on Commit. 
-
-<br> <!-- HTML line break -->
-  <img src="images/Step3 Stage.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Step 4: 
-
--	You will now see a new dialogue box that allows you to review the changes.  
--	Enter a short but descriptive comment summarising the action you are performing and select commit.
--	The Git Commit dialogue box will open indicating which items have been committed. Press close and your Git tab in R studio should now be clear, as all changes are now committed.
-
-<br> <!-- HTML line break -->
-  <img src="images/Step4 comment and commit.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Step 5: 
-
-  - Go to GitHub and create a new repository. Recommend using the same name as the R project you are planning to connect to GitHub. 
-- Once your repository is created, copy the code under the header ‘…or push an existing repository from the command line’
-
-<br> <!-- HTML line break -->
-  <img src="images/Step5 copy.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Step 6: 
-
--	Go back to R and click on Terminal, paste the lines of code copied from GitHub and press Enter.
-<br> <!-- HTML line break -->
-  <img src="images/Step6 terminal.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-Now go back to GitHub and you should be able to see all of the contents of your R project on GitHub :)
-
-<br> <!-- HTML line break -->
-  <img src="images/Completed repo.png" alt="Alt text" width="500">
-<br> <!-- HTML line break -->
-<br> <!-- HTML line break -->
-
-  
