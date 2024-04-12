@@ -9,7 +9,7 @@ This repository is designed as a tool to help enhance your understanding of Git 
 1. **Read the introduction** to Git and Github below. This is intended as a brief overview before getting some hands on practice in the tutorials. For deeper learning please see the `Duck book`:
  https://best-practice-and-impact.github.io/qa-of-code-guidance/version_control.html
 
-2. **Navigate the Tutorials**: Inside, you will find structured directories for Python and R tutorials. Each tutorial is self-contained with its own set of instructions and exercises Go to the `README.md` inside the folder of your preferred language to get started.
+2. **Navigate the Tutorials**: Inside, you will find structured directories for Python and R tutorials. Each tutorial is self-contained with its own set of instructions and exercises Go to the `python-tutorial.md` or `R-tutorial.md` inside the folder of your preferred language to get started.
 
 3. **Follow Along** with the step-by-step guides. Practice by making changes to the provided scripts or adding new ones as instructed.
 
